@@ -1,7 +1,0 @@
-jupytergis
-numpy
-pandas
-geopandas
-ipyd3geo
-rioxarray
-rasterio

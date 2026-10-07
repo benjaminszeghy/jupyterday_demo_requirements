@@ -1,0 +1,16 @@
+name: jupyterday-demo
+channels:
+  - conda-forge
+dependencies:
+  - python=3.12
+  - jupyterlab>=4.6
+  - xeus-python
+  - numpy
+  - pandas
+  - geopandas
+  - rasterio
+  - rioxarray
+  - pip
+  - pip:
+      - jupytergis
+      - ipyd3geo

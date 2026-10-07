@@ -1,0 +1,10 @@
+#!/bin/bash
+set -e
+mkdir -p ${NB_PYTHON_PREFIX}/etc/jupyter/jupyter_server_config.d
+cat > ${NB_PYTHON_PREFIX}/etc/jupyter/jupyter_server_config.d/default_kernel.json << 'EOF'
+{
+  "MappingKernelManager": {
+    "default_kernel_name": "xpython"
+  }
+}
+EOF

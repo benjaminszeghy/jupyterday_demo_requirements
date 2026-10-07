@@ -1,0 +1,1 @@
+# JupyterDay demo environment
