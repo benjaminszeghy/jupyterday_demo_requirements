@@ -11,3 +11,5 @@ EOF
 
 # Claude Code (npm global install lands in the conda env, which is on PATH)
 npm install -g @anthropic-ai/claude-code
+# ACP adapter; jupyter-ai's @Claude persona only loads if `claude-agent-acp` is on PATH
+npm install -g @zed-industries/claude-agent-acp
