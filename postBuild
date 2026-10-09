@@ -8,3 +8,6 @@ cat > ${NB_PYTHON_PREFIX}/etc/jupyter/jupyter_server_config.d/default_kernel.jso
   }
 }
 EOF
+
+# Claude Code (npm global install lands in the conda env, which is on PATH)
+npm install -g @anthropic-ai/claude-code

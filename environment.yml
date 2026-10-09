@@ -7,10 +7,20 @@ dependencies:
   - xeus-python
   - numpy
   - pandas
+  - xarray
+  - earthaccess
+  - h5netcdf
   - geopandas
   - rasterio
   - rioxarray
   - pip
+  - nodejs
+  - s3fs
+  - h5netcdf
+  - netcdf4
+  - h5py
   - pip:
       - jupytergis
       - ipyd3geo
+      - jupytergis[tiler]
+      - jupyter-ai
