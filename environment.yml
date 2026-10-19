@@ -15,12 +15,17 @@ dependencies:
   - rioxarray
   - pip
   - nodejs
+  - pnpm  # needed to build jupytergis labextensions from source
   - s3fs
   - h5netcdf
   - netcdf4
   - h5py
   - pip:
-      - jupytergis
+      # jupytergis is a monorepo; its packages pin each other to the same version,
+      # so the core/lab/qgis subpackages must also come from git
+      - jupytergis_core @ git+https://github.com/geojupyter/jupytergis.git#subdirectory=python/jupytergis_core
+      - jupytergis_lab[tiler] @ git+https://github.com/geojupyter/jupytergis.git#subdirectory=python/jupytergis_lab
+      - jupytergis_qgis @ git+https://github.com/geojupyter/jupytergis.git#subdirectory=python/jupytergis_qgis
+      - jupytergis[tiler] @ git+https://github.com/geojupyter/jupytergis.git#subdirectory=python/jupytergis
       - ipyd3geo
-      - jupytergis[tiler]
       - jupyter-ai
